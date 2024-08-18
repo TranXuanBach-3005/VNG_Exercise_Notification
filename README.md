@@ -1,7 +1,21 @@
 # VNG_Exercise_Notification
-Có 2 cách để test:
-Cách 1: Test sử dụng API
-     Bước 1: gọi API get tất cả user (https://localhost:7173/Post/users)
-     Bước 2: từ data ở bước 1 truyền những data cần thiết vào API tạo bài viết (https://localhost:7173/Post/create-post)
-     Bước 3: mở console xem thông tin notification 
-Cách 2: Run project unit test VNG_Exercise_Notification.Test 
+## Hướng dẫn Test
+
+Có 2 cách để test hệ thống:
+
+1. **Test sử dụng API:**
+
+   - **Bước 1:** Gọi API để lấy tất cả user:
+     ```http
+     GET https://localhost:7173/Post/users
+     ```
+   - **Bước 2:** Sử dụng dữ liệu từ bước 1 để truyền các thông tin cần thiết vào API tạo bài viết:
+     ```http
+     POST https://localhost:7173/Post/create-post
+     ```
+   - **Bước 3:** Mở console và xem thông tin notification đã được tạo.
+
+2. **Run project unit test:**
+
+   - Chạy unit test cho dự án `VNG_Exercise_Notification.Test`.
+
